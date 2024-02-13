@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+"name": "StopItYoutube",
+"version": "1.0",
+"description": "Very simple extension that blocks YouTube ads.",
+"content_scripts": [
+{
+"matches": ["<all_urls>"],
+"js": ["main.js"]
+}
+],
+"browser_specific_settings": {
+"gecko": {
+"id": "StopItYoutube@no_domain"
+}
+}
+}
